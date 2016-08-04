@@ -3,11 +3,13 @@ body {
 	background-image: url(page-mock.png);
   	background-size: 1024px 885px;
  	background-repeat: no-repeat;
+ 	width: 1024px;
 }
 
 h2 {
 	color: #f07c17;
 	font-size: 1.41em;
+	display: block;
 }
 
 p, li {
