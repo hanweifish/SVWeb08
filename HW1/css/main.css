@@ -1,0 +1,43 @@
+body{
+	margin: 0px 0px;
+	font-family: Verdana, sans-serif;
+
+}
+h1 {
+	font-size: 48px;
+	color: #666666;
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+h2 {
+	color: #f07c17;
+	font-size: 24px;
+	font-weight: bold;
+}
+ul {
+	color: #666666;
+	font-size: 16px;
+    line-height: 32px;
+    margin-top: 30px;
+}
+
+p {
+	color: #666666;
+	font-size: 16px;
+    line-height: 32px;
+}
+img {
+	width: 374px;
+}
+.left{
+	border: 1px solid #ccc;
+	width: 374px;
+	margin-top: 30px;
+	padding: 10px 30px 30px;
+
+}
+.wholePage{
+	width: 970px;
+	margin: 26px 27px;
+}
