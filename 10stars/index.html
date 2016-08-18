@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title> Rating Stars </title>
+		<style>
+			li{
+				display:  inline;
+				color: #999;
+				width: 40px;
+				height: 40px;
+				margin-left: 10px;
+			}
+			li.fillColor{
+				color: red;
+			}
+		</style>
+		<script>
+			window.onload = function() {
+				var stars = document.getElementById("stars");
+				var starsGroup = stars.getElementsByTagName("li");
+				var len = starsGroup.length;
+				var rating = document.getElementById("rating");
+
+				for(var i = 0; i < len; i++) {
+					console.log("working");
+					starsGroup[i].index = i;
+					
+					starsGroup[i].onmouseover = function() {
+						for (var j = 0; j < len; j++) {
+							if (j <= this.index) {
+							  starsGroup[j].classList.add("fillColor");
+							} else {
+								starsGroup[j].classList.remove("fillColor");
+							}
+						}
+				 	}
+
+				 	starsGroup[i].onclick = function () {
+				 		for (var j = 0; j < len; j++) {
+				 			rating.innerHTML = this.index + 1;
+							if (j <= this.index) {
+							  starsGroup[j].classList.add("fillColor");
+							} else {
+								starsGroup[j].classList.remove("fillColor");
+							}
+						}
+				 	}
+				}
+
+
+			};
+		</script>
+	</head>
+	<body>
+		<h1> Javascript Verison of Rating Star</h1>
+		<div> The star you choose is <span id="rating">?</span></div>
+
+		<ul id="stars">
+			<li> ★ </li>
+			<li> ★ </li>
+			<li> ★ </li>
+			<li> ★ </li>
+			<li> ★ </li>
+		</ul>
+
+	</body>
+</html>
