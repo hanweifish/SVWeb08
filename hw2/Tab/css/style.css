@@ -1,0 +1,29 @@
+.tabs {
+	margin-bottom: 5px;
+	padding-left: 0;
+}
+
+.tabs li {
+	display: inline;
+	cursor: pointer;
+	padding: 5px;
+}
+
+li.activeTab {
+	border: 1px solid black;
+	border-bottom: 1px solid white;
+}
+
+.content {
+	border: 1px solid black;
+	width: 500px;
+	height: 200px;
+}
+
+.content p {
+	display: none;
+}
+
+p.activeContent {
+	display: block;
+}
