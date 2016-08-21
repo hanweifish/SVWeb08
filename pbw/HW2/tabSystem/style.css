@@ -1,0 +1,29 @@
+li {
+	list-style: none;
+	display: inline;
+	width: 100px;
+	height: 50px;
+	border: 1px solid black;
+	cursor: pointer;
+}
+
+.activeTab {
+	background-color: grey;	
+}
+
+li:not(first-child) {
+	padding-left: 0px;
+}
+
+.active {
+	border: 1px solid black;
+	width: 500px;
+	height: 200px;
+	margin-left: 40px;
+	margin-top: -17px;
+	display: block;
+}
+
+div {
+	display: none;
+}
